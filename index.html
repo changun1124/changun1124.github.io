@@ -1,12 +1,160 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>찬근 홍 | Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="시스템 프로그래밍, 운영체제, 네트워크, 데이터베이스, AI 개발 경험을 소개하는 소프트웨어 개발자 포트폴리오입니다.">
+  <meta name="theme-color" content="#2563eb">
+  <title>Software Developer Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Cpath d='M25 19 12 32l13 13M39 19l13 13-13 13' fill='none' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="navbar container" aria-label="주요 메뉴">
+      <!-- 수정 포인트: 아래 이니셜 또는 이름을 지원자 정보로 변경하세요. -->
+      <a class="brand" href="#home" aria-label="홈으로 이동"><span>&lt;/&gt;</span> Developer</a>
+      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">SOFTWARE DEVELOPER PORTFOLIO</p>
+          <!-- 수정 포인트: 지원자 이름과 한 줄 소개를 변경하세요. -->
+          <h1 id="hero-title">기반 기술을 이해하고<br><span>끝까지 구현하는 개발자</span></h1>
+          <p class="hero-description">시스템 프로그래밍부터 네트워크, 데이터베이스, AI까지<br class="desktop-only"> 다양한 소프트웨어 기술을 직접 구현하며 경험을 쌓아왔습니다.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects <span aria-hidden="true">→</span></a>
+            <!-- 수정 포인트: USERNAME을 실제 GitHub 사용자명으로 변경하세요. -->
+            <a class="button button-secondary" href="https://github.com/USERNAME" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <aside class="focus-card reveal" aria-label="핵심 개발 분야">
+          <p class="focus-label">CORE FOCUS</p>
+          <div class="focus-item"><span>01</span><strong>System &amp; OS</strong></div>
+          <div class="focus-item"><span>02</span><strong>Network</strong></div>
+          <div class="focus-item"><span>03</span><strong>Database</strong></div>
+          <div class="focus-item"><span>04</span><strong>AI &amp; Data</strong></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="about" aria-labelledby="about-title">
+      <div class="container section-layout">
+        <div class="section-heading reveal">
+          <p class="section-number">01</p>
+          <p class="eyebrow">ABOUT ME</p>
+          <h2 id="about-title">기술의 원리를 이해하고<br>문제를 해결합니다.</h2>
+        </div>
+        <div class="about-content reveal">
+          <p>컴퓨터공학을 전공하며 시스템 프로그래밍, 운영체제, 네트워크, 데이터베이스, 인공지능 프로젝트를 수행했습니다. Linux 기반 Shell, Pintos 운영체제, Concurrent Stock Server를 구현하며 저수준 시스템과 네트워크 프로그래밍 경험을 쌓았습니다.</p>
+          <p>관계형 데이터베이스 설계와 SQL 질의 프로그램을 개발했고, Python과 PyTorch 기반 멀티모달 검색 및 개인화 추천 시스템도 구현했습니다. 새로운 기술을 학습하는 데 그치지 않고 실제 프로그램으로 완성하며, 문제의 원인을 분석하고 해결하는 과정을 중요하게 생각합니다.</p>
+          <div class="principle"><span aria-hidden="true">↳</span><p><strong>Learn. Build. Analyze. Improve.</strong><br>학습한 내용을 구현하고, 결과를 분석해 더 나은 해법을 찾습니다.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="section-number">02</p>
+          <p class="eyebrow">SKILLS</p>
+          <h2 id="skills-title">기술 스택</h2>
+          <p>프로젝트에서 직접 사용하고 적용한 기술입니다.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><div class="skill-icon" aria-hidden="true">{ }</div><h3>Programming Languages</h3><div class="badges"><span>C</span><span>C++</span><span>Python</span><span>SQL</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon" aria-hidden="true">$_</div><h3>System</h3><div class="badges"><span>Linux</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon" aria-hidden="true">AI</div><h3>AI / Data</h3><div class="badges"><span>PyTorch</span><span>NumPy</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon" aria-hidden="true">⎇</div><h3>Version Control</h3><div class="badges"><span>Git</span><span>GitHub</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon" aria-hidden="true">&gt;_</div><h3>Development Tools</h3><div class="badges"><span>Visual Studio Code</span><span>Visual Studio</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="section-number">03</p>
+          <p class="eyebrow">SELECTED PROJECTS</p>
+          <h2 id="projects-title">주요 프로젝트</h2>
+          <p>핵심 기술을 직접 설계하고 구현하며 해결한 문제들입니다.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top"><span class="project-index">01</span><span class="project-domain">OPERATING SYSTEM</span></div>
+            <h3>Pintos Operating System</h3>
+            <p class="project-summary">교육용 운영체제 Pintos의 User Program, Thread, Virtual Memory 핵심 기능을 구현했습니다.</p>
+            <div class="badges project-badges"><span>C</span><span>Linux</span><span>Thread</span><span>Virtual Memory</span><span>Synchronization</span></div>
+            <div class="project-details" id="details-1">
+              <ul><li>Argument Passing과 주요 System Call 구현</li><li>User Memory Validation 및 실행 파일 Deny Write 구현</li><li>Page Fault Handler, Disk Swap, Stack Growth 구현</li><li><code>syn_read</code>, <code>syn_write</code> 오류 원인을 분석해 <code>load()</code>와 file lock 처리 개선</li></ul>
+            </div>
+            <div class="project-actions"><button class="details-button" type="button" aria-expanded="false" aria-controls="details-1">Details <span aria-hidden="true">＋</span></button><!-- 수정 포인트: 아래 Repository URL을 실제 주소로 변경하세요. --><a href="https://github.com/USERNAME/pintos" target="_blank" rel="noopener noreferrer">Repository <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top"><span class="project-index">02</span><span class="project-domain">AI / SEARCH</span></div>
+            <h3>Multimodal Search &amp;<br>Personalized Recommendation</h3>
+            <p class="project-summary">패션 이미지와 텍스트를 함께 활용하는 검색 엔진과 개인화 추천 흐름을 구현했습니다.</p>
+            <div class="badges project-badges"><span>Python</span><span>PyTorch</span><span>NumPy</span><span>Multimodal AI</span><span>Recommendation</span></div>
+            <div class="project-details" id="details-2">
+              <ul><li>이미지·텍스트 입력 처리 및 멀티모달 검색 기능 개발</li><li>검색 결과와 개인화 추천 시스템 연계</li><li>대규모 언어 모델과 AI 개발 도구를 활용한 기능 구현</li><li>담당 기능과 진행 상황 공유를 위한 팀 협업 워크스페이스 구성</li></ul>
+            </div>
+            <div class="project-actions"><button class="details-button" type="button" aria-expanded="false" aria-controls="details-2">Details <span aria-hidden="true">＋</span></button><!-- 수정 포인트: 아래 Repository URL을 실제 주소로 변경하세요. --><a href="https://github.com/USERNAME/multimodal-search" target="_blank" rel="noopener noreferrer">Repository <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top"><span class="project-index">03</span><span class="project-domain">NETWORK</span></div>
+            <h3>Concurrent Stock Server</h3>
+            <p class="project-summary">Linux 환경에서 여러 클라이언트의 요청을 동시에 처리하는 주식 서버를 구현했습니다.</p>
+            <div class="badges project-badges"><span>C</span><span>Linux</span><span>Socket</span><span>Concurrent</span><span>Synchronization</span></div>
+            <div class="project-details" id="details-3">
+              <ul><li>Socket Programming 기반 조회·매수·매도 기능 개발</li><li>Event-based와 Thread-based 서버를 각각 구현</li><li>공유 데이터의 안전한 동시 접근을 위한 동기화 적용</li><li>두 서버 구조의 요청 처리 방식과 성능 차이 비교</li></ul>
+            </div>
+            <div class="project-actions"><button class="details-button" type="button" aria-expanded="false" aria-controls="details-3">Details <span aria-hidden="true">＋</span></button><!-- 수정 포인트: 아래 Repository URL을 실제 주소로 변경하세요. --><a href="https://github.com/USERNAME/stock-server" target="_blank" rel="noopener noreferrer">Repository <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top"><span class="project-index">04</span><span class="project-domain">DATABASE</span></div>
+            <h3>Automobile Company Database</h3>
+            <p class="project-summary">자동차 회사의 업무 데이터를 관리하는 관계형 데이터베이스와 SQL 질의 프로그램을 구축했습니다.</p>
+            <div class="badges project-badges"><span>SQL</span><span>RDBMS</span><span>Database Design</span><span>Relational Database</span></div>
+            <div class="project-details" id="details-4">
+              <ul><li>업무 데이터를 테이블로 모델링하고 PK·FK 관계 정의</li><li>SQL 기반 조회·삽입·수정·삭제 기능 구현</li><li>여러 테이블을 연결하는 실무형 Query 작성</li><li>다양한 조건의 질의를 수행하는 프로그램 구현</li></ul>
+            </div>
+            <div class="project-actions"><button class="details-button" type="button" aria-expanded="false" aria-controls="details-4">Details <span aria-hidden="true">＋</span></button><!-- 수정 포인트: 아래 Repository URL을 실제 주소로 변경하세요. --><a href="https://github.com/USERNAME/automobile-database" target="_blank" rel="noopener noreferrer">Repository <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner reveal">
+        <div><p class="eyebrow">CONTACT</p><h2 id="contact-title">함께 만들 기회를<br>기다리고 있습니다.</h2><p>프로젝트와 개발 경험에 대해 더 이야기하고 싶다면 편하게 연락해 주세요.</p></div>
+        <div class="contact-links">
+          <!-- 수정 포인트: USERNAME과 이메일 주소를 실제 정보로 변경하세요. -->
+          <a href="https://github.com/USERNAME" target="_blank" rel="noopener noreferrer"><span><small>GITHUB</small>github.com/USERNAME</span><strong aria-hidden="true">↗</strong></a>
+          <a href="mailto:example@email.com"><span><small>EMAIL</small>example@email.com</span><strong aria-hidden="true">→</strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><p>© 2026 Developer Portfolio. All Rights Reserved.</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></div></footer>
+</body>
 </html>
